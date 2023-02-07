@@ -1,0 +1,89 @@
+edgegateway@gateway:~$ kubectl describe pod termination-demo
+Name:         termination-demo
+Namespace:    default
+Priority:     0
+Node:         gateway/10.42.0.1
+Start Time:   Sun, 04 Sep 2022 18:30:36 +0200
+Labels:       <none>
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.7
+IPs:
+  IP:  172.17.0.7
+Containers:
+  termination-demo-container:
+    Container ID:
+    Image:         debian
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      sleep 10 && echo Sleep expired > /dev/termination-log
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2j2f2 (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  default-token-2j2f2:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2j2f2
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  9m11s                  default-scheduler  Successfully assigned default/termination-demo to gateway
+  Normal   Pulling    7m37s (x4 over 9m10s)  kubelet            Pulling image "debian"
+  Warning  Failed     7m35s (x4 over 9m8s)   kubelet            Failed to pull image "debian": rpc error: code = Unknown desc = Error response from daemon: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit
+  Warning  Failed     7m35s (x4 over 9m8s)   kubelet            Error: ErrImagePull
+  Warning  Failed     7m25s (x6 over 9m8s)   kubelet            Error: ImagePullBackOff
+  Normal   BackOff    4m8s (x20 over 9m8s)   kubelet            Back-off pulling image "debian"
+  
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+edgegateway@gateway:~$ kubectl get nodes
+NAME      STATUS                        ROLES                  AGE    VERSION
+gateway   Ready                         control-plane,master   551d   v1.20.4
+node1     Ready                         worker                 502d   v1.21.0
+node10    NotReady                      <none>                 487d   v1.21.0
+node13    Ready                         <none>                 487d   v1.21.0
+node14    Ready                         <none>                 487d   v1.21.0
+node15    NotReady                      <none>                 487d   v1.21.0
+node16    Ready                         <none>                 487d   v1.21.0
+node17    NotReady                      <none>                 487d   v1.21.0
+node19    NotReady                      <none>                 242d   v1.21.0
+node2     Ready                         worker                 501d   v1.21.0
+node20    Ready                         <none>                 487d   v1.21.0
+node21    Ready                         <none>                 487d   v1.21.0
+node22    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node23    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node24    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node4     Ready                         worker                 501d   v1.21.0
+node5     NotReady                      worker                 502d   v1.21.0
+node6     Ready                         worker                 502d   v1.21.0
+node7     Ready                         <none>                 488d   v1.21.0
+node8     Ready                         <none>                 488d   v1.21.0
+node9     Ready                         <none>                 487d   v1.21.0
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+edgegateway@gateway:~$ kubectl get pods
+NAME                                    READY   STATUS             RESTARTS   AGE
+flask-k8s-deployment-7bd77c5f85-xsfw5   1/1     Running            0          3d22h
+termination-demo                        0/1     ImagePullBackOff   0          9m34s

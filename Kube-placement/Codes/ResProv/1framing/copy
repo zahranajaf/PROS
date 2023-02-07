@@ -1,0 +1,37 @@
+'''
+    #   Moving file ${from_file_path} to ${to_file_path}"
+    echo "Moving file ${from_file_path} to ${to_file_path}"
+    mv ${from_file_path} ${to_file_path} \
+        || handle_error "Error in moving file from ${from_file_path} to ${to_file_path}" "${curr_file_name}" "$0" "$LINENO"
+    
+    log_info "File moved from ${from_file_path} to ${to_file_path}" "${curr_file_name}" "$0"
+
+    # Write to message queue
+    if [  "${mq_write}" != "-" ]; then
+        echo "   Writing file name ${curr_file_name} to a message queue ${mq_write}"
+        result="$(write_to_mq.sh ${mq_write} ${curr_file_name})"
+
+        if [ -n "${result}" ]; then
+            log_info "File name ${curr_file_name} written to a message queue ${mq_write}" "${curr_file_name}" "$0"
+        else
+            handle_error "Error in writing a file name ${curr_file_name} to a message queue ${mq_write}" "${curr_file_name}" "$0" "$LINENO"   
+        fi
+   
+    fi '''
+
+edgegateway@gateway:~/Documents/NaMe/CODA/Traffic-sign-classification-microservices/1framing/work$ kubectl apply -f https://deploy.kubemq.io/init
+namespace/kubemq created
+Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition
+customresourcedefinition.apiextensions.k8s.io/kubemqclusters.core.k8s.kubemq.io created
+customresourcedefinition.apiextensions.k8s.io/kubemqconnectors.core.k8s.kubemq.io created
+customresourcedefinition.apiextensions.k8s.io/kubemqdashboards.core.k8s.kubemq.io created
+clusterrole.rbac.authorization.k8s.io/kubemq-operator created
+role.rbac.authorization.k8s.io/kubemq-cluster created
+edgegateway@gateway:~/Documents/NaMe/CODA/Traffic-sign-classification-microservices/1framing/work$ kubectl apply -f https://deploy.kubemq.io/key/da9772e9-135e-4590-aa0a-0ba0bcd7419d
+serviceaccount/kubemq-cluster created
+serviceaccount/kubemq-operator created
+rolebinding.rbac.authorization.k8s.io/kubemq-cluster-kubemq-rb created
+clusterrolebinding.rbac.authorization.k8s.io/kubemq-operator-kubemq-crb created
+deployment.apps/kubemq-operator created
+kubemqcluster.core.k8s.kubemq.io/kubemq-cluster created
+

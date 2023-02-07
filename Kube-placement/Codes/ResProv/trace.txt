@@ -1,0 +1,418 @@
+# log of deleting a node
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config delete nodes  pool-cfc82-ijkxe
+node "pool-cfc82-ijkxe" deleted
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE    IP                NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-69clj   1/1     Running   0              11m    192.168.198.194   pool-cfc82-ijkxe   <none>           <none>
+slacont                                 1/1     Running   1 (130m ago)   132m   192.168.164.68    pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE    IP                NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-69clj   1/1     Running   0              12m    192.168.198.194   pool-cfc82-ijkxe   <none>           <none>
+slacont                                 1/1     Running   1 (130m ago)   133m   192.168.164.68    pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get nodes -o wide
+NAME               STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP       OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+pool-08480-azfux   Ready    <none>   13h   v1.24.4   <none>        159.100.249.232   Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+pool-08480-iyecq   Ready    <none>   13h   v1.24.4   <none>        159.100.253.59    Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE    IP                NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-69clj   1/1     Running   0              12m    192.168.198.194   pool-cfc82-ijkxe   <none>           <none>
+slacont                                 1/1     Running   1 (130m ago)   133m   192.168.164.68    pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get nodes -o wide
+NAME               STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP       OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+pool-08480-azfux   Ready    <none>   13h   v1.24.4   <none>        159.100.249.232   Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+pool-08480-iyecq   Ready    <none>   13h   v1.24.4   <none>        159.100.253.59    Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE    IP                NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-69clj   1/1     Running   0              12m    192.168.198.194   pool-cfc82-ijkxe   <none>           <none>
+slacont                                 1/1     Running   1 (130m ago)   133m   192.168.164.68    pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE    IP               NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-9zjbf   1/1     Running   0              20s    192.168.164.69   pool-08480-iyecq   <none>           <none>
+slacont                                 1/1     Running   1 (131m ago)   133m   192.168.164.68   pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS       AGE     IP               NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-9zjbf   1/1     Running   0              2m27s   192.168.164.69   pool-08480-iyecq   <none>           <none>
+slacont                                 1/1     Running   1 (133m ago)   136m    192.168.164.68   pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get deployments -o wide
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                  SELECTOR
+flask-k8s-deployment   1/1     1            1           15m   flask-k8s    sina88/webserv:latest   app=flask-k8s
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get deployments -o wide
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                  SELECTOR
+flask-k8s-deployment   1/1     1            1           5h27m   flask-k8s    sina88/webserv:latest   app=flask-k8s
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS        AGE     IP               NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-9zjbf   1/1     Running   0               5h14m   192.168.164.69   pool-08480-iyecq   <none>           <none>
+slacont                                 1/1     Running   1 (7h25m ago)   7h28m   192.168.164.68   pool-08480-iyecq   <none>           <none>
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get nodes -o wide
+NAME               STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP       OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+pool-08480-azfux   Ready    <none>   18h   v1.24.4   <none>        159.100.249.232   Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+pool-08480-iyecq   Ready    <none>   18h   v1.24.4   <none>        159.100.253.59    Ubuntu 22.04.1 LTS   5.15.0-46-generic   containerd://1.5.9-0ubuntu3
+PS C:\Users\narmehran> .\kubectl.exe --kubeconfig .\.kube\config get pods -o wide
+NAME                                    READY   STATUS    RESTARTS        AGE     IP               NODE               NOMINATED NODE   READINESS GATES
+flask-k8s-deployment-794bd6445c-9zjbf   1/1     Running   0               5h45m   192.168.164.69   pool-08480-iyecq   <none>           <none>
+slacont                                 1/1     Running   1 (7h56m ago)   7h59m   192.168.164.68   pool-08480-iyecq   <none>           <none>
+##########################################################################################
+#######################The log of a terminated pod########################################
+edgegateway@gateway:~$ kubectl describe pod termination-demo
+Name:         termination-demo
+Namespace:    default
+Priority:     0
+Node:         gateway/10.42.0.1
+Start Time:   Sun, 04 Sep 2022 18:30:36 +0200
+Labels:       <none>
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.7
+IPs:
+  IP:  172.17.0.7
+Containers:
+  termination-demo-container:
+    Container ID:
+    Image:         debian
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      sleep 10 && echo Sleep expired > /dev/termination-log
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2j2f2 (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  default-token-2j2f2:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2j2f2
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  6m45s                  default-scheduler  Successfully assigned default/termination-demo to gateway
+  Normal   Pulling    5m11s (x4 over 6m44s)  kubelet            Pulling image "debian"
+  Warning  Failed     5m9s (x4 over 6m42s)   kubelet            Failed to pull image "debian": rpc error: code = Unknown desc = Error response from daemon: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit
+  Warning  Failed     5m9s (x4 over 6m42s)   kubelet            Error: ErrImagePull
+  Warning  Failed     4m59s (x6 over 6m42s)  kubelet            Error: ImagePullBackOff
+  Normal   BackOff    102s (x20 over 6m42s)  kubelet            Back-off pulling image "debian"
+edgegateway@gateway:~$ kubectl describe pod termination-demo
+Name:         termination-demo
+Namespace:    default
+Priority:     0
+Node:         gateway/10.42.0.1
+Start Time:   Sun, 04 Sep 2022 18:30:36 +0200
+Labels:       <none>
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.7
+IPs:
+  IP:  172.17.0.7
+Containers:
+  termination-demo-container:
+    Container ID:
+    Image:         debian
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/sh
+    Args:
+      -c
+      sleep 10 && echo Sleep expired > /dev/termination-log
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2j2f2 (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  default-token-2j2f2:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2j2f2
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  9m11s                  default-scheduler  Successfully assigned default/termination-demo to gateway
+  Normal   Pulling    7m37s (x4 over 9m10s)  kubelet            Pulling image "debian"
+  Warning  Failed     7m35s (x4 over 9m8s)   kubelet            Failed to pull image "debian": rpc error: code = Unknown desc = Error response from daemon: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit
+  Warning  Failed     7m35s (x4 over 9m8s)   kubelet            Error: ErrImagePull
+  Warning  Failed     7m25s (x6 over 9m8s)   kubelet            Error: ImagePullBackOff
+  Normal   BackOff    4m8s (x20 over 9m8s)   kubelet            Back-off pulling image "debian"
+  
+#####################################################################################################
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          6s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          10s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          11s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          11s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          12s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   0          13s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   0          14s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   1          22s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   1          23s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   1          24s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          26s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          27s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          28s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          31s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          32s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          33s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          33s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          34s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          34s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          35s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          36s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          38s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   1          39s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   1          39s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          41s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          43s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          47s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          47s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          49s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          50s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   2          51s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          52s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          52s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          53s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          54s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          55s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          55s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          56s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          57s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          57s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          58s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          58s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          59s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          59s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          60s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          60s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          61s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          61s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          62s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          63s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          63s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          63s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   2          64s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   2          64s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   2          65s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS    RESTARTS   AGE
+termination-demo   1/1     Running   4          2m20s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   4          2m22s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   4          2m23s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   5          5m20s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   5          5m21s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   5          6m41s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS      RESTARTS   AGE
+termination-demo   0/1     Completed   6          7m4s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   6          7m35s
+edgegateway@gateway:~/Documents/Zara/sla$  kubectl get pod termination-demo
+NAME               READY   STATUS             RESTARTS   AGE
+termination-demo   0/1     CrashLoopBackOff   6          7m36s
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+edgegateway@gateway:~$ kubectl get nodes
+NAME      STATUS                        ROLES                  AGE    VERSION
+gateway   Ready                         control-plane,master   551d   v1.20.4
+node1     Ready                         worker                 502d   v1.21.0
+node10    NotReady                      <none>                 487d   v1.21.0
+node13    Ready                         <none>                 487d   v1.21.0
+node14    Ready                         <none>                 487d   v1.21.0
+node15    NotReady                      <none>                 487d   v1.21.0
+node16    Ready                         <none>                 487d   v1.21.0
+node17    NotReady                      <none>                 487d   v1.21.0
+node19    NotReady                      <none>                 242d   v1.21.0
+node2     Ready                         worker                 501d   v1.21.0
+node20    Ready                         <none>                 487d   v1.21.0
+node21    Ready                         <none>                 487d   v1.21.0
+node22    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node23    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node24    NotReady,SchedulingDisabled   <none>                 487d   v1.21.0
+node4     Ready                         worker                 501d   v1.21.0
+node5     NotReady                      worker                 502d   v1.21.0
+node6     Ready                         worker                 502d   v1.21.0
+node7     Ready                         <none>                 488d   v1.21.0
+node8     Ready                         <none>                 488d   v1.21.0
+node9     Ready                         <none>                 487d   v1.21.0
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+edgegateway@gateway:~$ kubectl get pods
+NAME                                    READY   STATUS             RESTARTS   AGE
+flask-k8s-deployment-7bd77c5f85-xsfw5   1/1     Running            0          3d22h
+grafana-6488594599-mpnrj                1/1     Running            3          302d
+pingtest-64f9cb6b84-4fcng               1/1     Terminating        1          486d
+pingtest-64f9cb6b84-57nxm               1/1     Running            1          170d
+pingtest-64f9cb6b84-cxg4h               1/1     Running            5          457d
+pingtest-64f9cb6b84-dzt7n               1/1     Running            9          486d
+pingtest-64f9cb6b84-tb7ms               1/1     Running            4          347d
+pingtest-64f9cb6b84-wt6r2               1/1     Running            3          312d
+termination-demo                        0/1     ImagePullBackOff   0          9m34s
+test-kl-kube-latency-2s4ht              1/1     Running            9295       432d
+test-kl-kube-latency-7m885              0/1     ImagePullBackOff   6623       486d
+test-kl-kube-latency-9vnmz              1/1     Running            15         486d
+test-kl-kube-latency-9xlnm              1/1     Running            14         436d
+test-kl-kube-latency-b6j6s              1/1     Running            5648       486d
+test-kl-kube-latency-bcxvc              0/1     ImagePullBackOff   12140      486d
+test-kl-kube-latency-bf5qq              1/1     Running            294        488d
+test-kl-kube-latency-csvd7              1/1     Running            10         486d
+test-kl-kube-latency-d4k8k              1/1     Running            50041      432d
+test-kl-kube-latency-dztsc              0/1     ImagePullBackOff   13237      486d
+test-kl-kube-latency-fgrbw              1/1     Running            1867       486d
+test-kl-kube-latency-gq6j2              1/1     Running            12         486d
+test-kl-kube-latency-hmfbl              1/1     Running            15015      432d
+test-kl-kube-latency-kd9lf              1/1     Running            0          486d
+test-kl-kube-latency-rt5jf              1/1     Running            1707       486d
+test-kl-kube-latency-t95xp              0/1     ErrImagePull       8935       486d
+test-kl-kube-latency-t98gd              1/1     Running            1537       488d
+test-kl-kube-latency-wwk72              0/1     Error              14         488d
+test-kl-kube-latency-zssnf              1/1     Running            2557       486d

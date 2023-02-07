@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yaml
+    kompose.version: 1.22.0 (955b78124)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: 00encoding
+  name: 00encoding
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: 00encoding
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yaml
+        kompose.version: 1.22.0 (955b78124)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: 00encoding
+    spec:
+      schedulerName: ads 
+      containers:
+        - env:
+            - name: STEP_NAME
+              value: 00encod
+          image: sina88/ubuntu-encoding:rpi4
+          name: 00encoding
+          resources: {}
+      imagePullSecrets:  
+      - name: name-secret
+      restartPolicy: Always

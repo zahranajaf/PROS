@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  0encoding:
+    build: .
+    environment: 
+      - STEP_NAME=0encod
+    #volumes:
+      #- ~/Documents/NaMe/CODA/Traffic-sign-classification-microservices/0encoding/input:/in
+      #- ~/Documents/NaMe/CODA/Traffic-sign-classification-microservices/0encoding/work:/work
+      #- ~/Documents/NaMe/CODA/Traffic-sign-classification-microservices/0encoding/output:/out
