@@ -1,0 +1,181 @@
+"Response time (s)","method"," "
+1.2,PROS,Simulation
+1.11,PROS,Simulation
+1.07,PROS,Simulation
+1.03,PROS,Simulation
+0.99,PROS,Simulation
+0.99,PROS,Simulation
+0.97,PROS,Simulation
+0.96,PROS,Simulation
+0.95,PROS,Simulation
+0.96,PROS,Simulation
+1.65,PROS,Simulation
+1.56,PROS,Simulation
+1.51,PROS,Simulation
+1.47,PROS,Simulation
+1.43,PROS,Simulation
+1.41,PROS,Simulation
+1.38,PROS,Simulation
+1.36,PROS,Simulation
+1.35,PROS,Simulation
+1.36,PROS,Simulation
+1.81,PROS,Simulation
+1.7,PROS,Simulation
+1.64,PROS,Simulation
+1.6,PROS,Simulation
+1.57,PROS,Simulation
+1.54,PROS,Simulation
+1.52,PROS,Simulation
+1.53,PROS,Simulation
+1.52,PROS,Simulation
+1.52,PROS,Simulation
+1.2,BI,Simulation
+1.14,BI,Simulation
+1.10,BI,Simulation
+1.08,BI,Simulation
+1.03,BI,Simulation
+1.04,BI,Simulation
+1.02,BI,Simulation
+1.01,BI,Simulation
+1.0,BI,Simulation
+1.01,BI,Simulation
+1.65,BI,Simulation
+1.59,BI,Simulation
+1.55,BI,Simulation
+1.52,BI,Simulation
+1.48,BI,Simulation
+1.49,BI,Simulation
+1.48,BI,Simulation
+1.47,BI,Simulation
+1.45,BI,Simulation
+1.46,BI,Simulation
+1.81,BI,Simulation
+1.75,BI,Simulation
+1.72,BI,Simulation
+1.7,BI,Simulation
+1.68,BI,Simulation
+1.66,BI,Simulation
+1.66,BI,Simulation
+1.65,BI,Simulation
+1.66,BI,Simulation
+1.65,BI,Simulation
+1.2,RAP,Simulation
+1.21,RAP,Simulation
+1.2,RAP,Simulation
+1.18,RAP,Simulation
+1.19,RAP,Simulation
+1.2,RAP,Simulation
+1.21,RAP,Simulation
+1.2,RAP,Simulation
+1.18,RAP,Simulation
+1.2,RAP,Simulation
+1.65,RAP,Simulation
+1.63,RAP,Simulation
+1.63,RAP,Simulation
+1.64,RAP,Simulation
+1.65,RAP,Simulation
+1.66,RAP,Simulation
+1.65,RAP,Simulation
+1.64,RAP,Simulation
+1.65,RAP,Simulation
+1.63,RAP,Simulation
+1.81,RAP,Simulation
+1.81,RAP,Simulation
+1.78,RAP,Simulation
+1.8,RAP,Simulation
+1.79,RAP,Simulation
+1.8,RAP,Simulation
+1.81,RAP,Simulation
+1.82,RAP,Simulation
+1.8,RAP,Simulation
+1.79,RAP,Simulation
+1.5540,PROS,Real testbed
+1.1499,PROS,Real testbed
+1.11,PROS,Real testbed
+1.03,PROS,Real testbed
+0.99,PROS,Real testbed
+0.96,PROS,Real testbed
+0.92,PROS,Real testbed
+0.9,PROS,Real testbed
+0.9,PROS,Real testbed
+0.92,PROS,Real testbed
+1.76719,PROS,Real testbed
+1.3115,PROS,Real testbed
+1.2199,PROS,Real testbed
+1.1923,PROS,Real testbed
+1.1186,PROS,Real testbed
+1.1097,PROS,Real testbed
+1.1034,PROS,Real testbed
+1.0002,PROS,Real testbed
+1.0017,PROS,Real testbed
+1.0011,PROS,Real testbed
+2.0041,PROS,Real testbed
+1.4906,PROS,Real testbed
+1.2902,PROS,Real testbed
+1.2383,PROS,Real testbed
+1.20673,PROS,Real testbed
+1.1803,PROS,Real testbed
+1.19021,PROS,Real testbed
+1.1601,PROS,Real testbed
+1.17521,PROS,Real testbed
+1.16803,PROS,Real testbed
+1.5540,BI,Real testbed
+1.3792,BI,Real testbed
+1.3051,BI,Real testbed
+1.2551,BI,Real testbed
+1.208,BI,Real testbed
+1.1873,BI,Real testbed
+1.1873,BI,Real testbed
+1.1373,BI,Real testbed
+1.1073,BI,Real testbed
+1.0973,BI,Real testbed
+1.76719,BI,Real testbed
+1.5716,BI,Real testbed
+1.5423,BI,Real testbed
+1.4799,BI,Real testbed
+1.3946,BI,Real testbed
+1.3214,BI,Real testbed
+1.3102,BI,Real testbed
+1.3015,BI,Real testbed
+1.2291,BI,Real testbed
+1.2321,BI,Real testbed
+2.0041,BI,Real testbed
+1.7463,BI,Real testbed
+1.6551,BI,Real testbed
+1.6051,BI,Real testbed
+1.6089,BI,Real testbed
+1.6039,BI,Real testbed
+1.571,BI,Real testbed
+1.5601,BI,Real testbed
+1.4879,BI,Real testbed
+1.4973,BI,Real testbed
+1.5540,RAP,Real testbed
+1.5630,RAP,Real testbed
+1.5041,RAP,Real testbed
+1.4987,RAP,Real testbed
+1.4940,RAP,Real testbed
+1.5661,RAP,Real testbed
+1.5,RAP,Real testbed
+1.5713,RAP,Real testbed
+1.5564,RAP,Real testbed
+1.532,RAP,Real testbed
+1.76719,RAP,Real testbed
+1.7665,RAP,Real testbed
+1.74701,RAP,Real testbed
+1.73810,RAP,Real testbed
+1.77013,RAP,Real testbed
+1.75610,RAP,Real testbed
+1.74013,RAP,Real testbed
+1.73012,RAP,Real testbed
+1.76901,RAP,Real testbed
+1.76803,RAP,Real testbed
+2.0041,RAP,Real testbed
+2.035,RAP,Real testbed
+1.96719,RAP,Real testbed
+2.014,RAP,Real testbed
+1.97192,RAP,Real testbed
+2.00117,RAP,Real testbed
+2.0613,RAP,Real testbed
+1.96797,RAP,Real testbed
+2.009,RAP,Real testbed
+2.0172,RAP,Real testbed

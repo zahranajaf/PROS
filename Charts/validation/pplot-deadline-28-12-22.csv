@@ -1,0 +1,181 @@
+"Deadline satis. rate","method"," "
+0.68,PROS,Simulation
+0.75,PROS,Simulation
+0.78,PROS,Simulation
+0.81,PROS,Simulation
+0.83,PROS,Simulation
+0.84,PROS,Simulation
+0.85,PROS,Simulation
+0.87,PROS,Simulation
+0.88,PROS,Simulation
+0.88,PROS,Simulation
+0.5,PROS,Simulation
+0.56,PROS,Simulation
+0.6,PROS,Simulation
+0.63,PROS,Simulation
+0.63,PROS,Simulation
+0.64,PROS,Simulation
+0.65,PROS,Simulation
+0.66,PROS,Simulation
+0.67,PROS,Simulation
+0.66,PROS,Simulation
+0.4,PROS,Simulation
+0.48,PROS,Simulation
+0.53,PROS,Simulation
+0.57,PROS,Simulation
+0.59,PROS,Simulation
+0.58,PROS,Simulation
+0.61,PROS,Simulation
+0.62,PROS,Simulation
+0.63,PROS,Simulation
+0.62,PROS,Simulation
+0.68,BI,Simulation
+0.72,BI,Simulation
+0.74,BI,Simulation
+0.76,BI,Simulation
+0.78,BI,Simulation
+0.79,BI,Simulation
+0.8,BI,Simulation
+0.81,BI,Simulation
+0.82,BI,Simulation
+0.82,BI,Simulation
+0.5,BI,Simulation
+0.54,BI,Simulation
+0.56,BI,Simulation
+0.56,BI,Simulation
+0.57,BI,Simulation
+0.57,BI,Simulation
+0.58,BI,Simulation
+0.59,BI,Simulation
+0.6,BI,Simulation
+0.59,BI,Simulation
+0.4,BI,Simulation
+0.44,BI,Simulation
+0.46,BI,Simulation
+0.47,BI,Simulation
+0.47,BI,Simulation
+0.48,BI,Simulation
+0.48,BI,Simulation
+0.5,BI,Simulation
+0.51,BI,Simulation
+0.51,BI,Simulation
+0.68,RAP,Simulation
+0.67,RAP,Simulation
+0.68,RAP,Simulation
+0.67,RAP,Simulation
+0.69,RAP,Simulation
+0.67,RAP,Simulation
+0.67,RAP,Simulation
+0.69,RAP,Simulation
+0.68,RAP,Simulation
+0.68,RAP,Simulation
+0.5,RAP,Simulation
+0.5,RAP,Simulation
+0.51,RAP,Simulation
+0.5,RAP,Simulation
+0.49,RAP,Simulation
+0.5,RAP,Simulation
+0.51,RAP,Simulation
+0.5,RAP,Simulation
+0.5,RAP,Simulation
+0.49,RAP,Simulation
+0.4,RAP,Simulation
+0.4,RAP,Simulation
+0.39,RAP,Simulation
+0.41,RAP,Simulation
+0.42,RAP,Simulation
+0.4,RAP,Simulation
+0.4,RAP,Simulation
+0.39,RAP,Simulation
+0.41,RAP,Simulation
+0.4,RAP,Simulation
+0.7,PROS,Real testbed
+0.76,PROS,Real testbed
+0.79,PROS,Real testbed
+0.8,PROS,Real testbed
+0.83,PROS,Real testbed
+0.82,PROS,Real testbed
+0.84,PROS,Real testbed
+0.85,PROS,Real testbed
+0.86,PROS,Real testbed
+0.86,PROS,Real testbed
+0.52,PROS,Real testbed
+0.58,PROS,Real testbed
+0.61,PROS,Real testbed
+0.63,PROS,Real testbed
+0.65,PROS,Real testbed
+0.67,PROS,Real testbed
+0.68,PROS,Real testbed
+0.69,PROS,Real testbed
+0.7,PROS,Real testbed
+0.7,PROS,Real testbed
+0.42,PROS,Real testbed
+0.5,PROS,Real testbed
+0.55,PROS,Real testbed
+0.58,PROS,Real testbed
+0.6,PROS,Real testbed
+0.62,PROS,Real testbed
+0.63,PROS,Real testbed
+0.63,PROS,Real testbed
+0.65,PROS,Real testbed
+0.64,PROS,Real testbed
+0.7,BI,Real testbed
+0.74,BI,Real testbed
+0.76,BI,Real testbed
+0.76,BI,Real testbed
+0.78,BI,Real testbed
+0.79,BI,Real testbed
+0.8,BI,Real testbed
+0.82,BI,Real testbed
+0.82,BI,Real testbed
+0.82,BI,Real testbed
+0.52,BI,Real testbed
+0.55,BI,Real testbed
+0.56,BI,Real testbed
+0.58,BI,Real testbed
+0.58,BI,Real testbed
+0.59,BI,Real testbed
+0.59,BI,Real testbed
+0.6,BI,Real testbed
+0.61,BI,Real testbed
+0.61,BI,Real testbed
+0.42,BI,Real testbed
+0.46,BI,Real testbed
+0.48,BI,Real testbed
+0.5,BI,Real testbed
+0.5,BI,Real testbed
+0.52,BI,Real testbed
+0.53,BI,Real testbed
+0.53,BI,Real testbed
+0.54,BI,Real testbed
+0.54,BI,Real testbed
+0.7,RAP,Real testbed
+0.7,RAP,Real testbed
+0.72,RAP,Real testbed
+0.7,RAP,Real testbed
+0.69,RAP,Real testbed
+0.7,RAP,Real testbed
+0.71,RAP,Real testbed
+0.69,RAP,Real testbed
+0.69,RAP,Real testbed
+0.7,RAP,Real testbed
+0.52,RAP,Real testbed
+0.5,RAP,Real testbed
+0.51,RAP,Real testbed
+0.5,RAP,Real testbed
+0.49,RAP,Real testbed
+0.5,RAP,Real testbed
+0.51,RAP,Real testbed
+0.49,RAP,Real testbed
+0.49,RAP,Real testbed
+0.5,RAP,Real testbed
+0.42,RAP,Real testbed
+0.41,RAP,Real testbed
+0.4,RAP,Real testbed
+0.4,RAP,Real testbed
+0.41,RAP,Real testbed
+0.39,RAP,Real testbed
+0.4,RAP,Real testbed
+0.43,RAP,Real testbed
+0.42,RAP,Real testbed
+0.42,RAP,Real testbed
