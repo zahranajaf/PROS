@@ -1,9 +1,9 @@
 # PROS
 
 
-PROS is a proactive sla-aware application placement method for the computing continuum.
 
-This repository includes the source codes for reproducibility of the PROS method proposed in the follwoing paper:
+This repository includes the source codes for reproducibility of the PROS method as a proactive sla-aware application placement method for the computing continuum.
+
 
 # Citation
 Samani, Z.N., Mehran, N., Kimovski, D. and Prodan, R., 2023, May. Proactive SLA-aware Application Placement in the Computing Continuum. In 37th IEEE International Parallel & Distributed Processing Symposium (IPDPS). [https://doi.org/?????](https://ieeexplore.ieee.org/abstract/document/?????)
